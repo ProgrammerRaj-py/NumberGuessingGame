@@ -1,4 +1,4 @@
-import random as r
+from random import randint
 
 # welcome screen
 user_name = input('Type your name : ').title()
@@ -12,7 +12,7 @@ while True:
         user_said = input('Invalid keyword\nType again : ').lower()
 
     elif 'y' in user_said:
-        winning_number = r.randint(1,100)
+        winning_number = randint(1,100)
         user_guessed = int(input('\nYou have 6 guesses.\nGuess any number between 1 and 100\nGuess the number : '))
         turn = 1
 
